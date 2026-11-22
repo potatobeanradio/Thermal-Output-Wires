@@ -1,0 +1,226 @@
+{
+  "FormatVersion": 1,
+  "Stamp": "20261122T025820Z-add43d1c",
+  "Written": "2026-11-21T19:58:20.586354-07:00",
+  "Product": "1.9.3",
+  "Solver": {
+    "Name": "Palace",
+    "Version": "0.18.1 (0dc74cd, schema 1-7-0)",
+    "Device": "cpu"
+  },
+  "Files": {
+    "Snp": "Output EM.palace.s2p",
+    "Npy": "Output EM.palace_em.npy",
+    "Fields": null
+  },
+  "Ports": [
+    {
+      "Number": 1,
+      "Name": "port/1",
+      "Z0Re": 50,
+      "Z0Im": 0,
+      "Kind": "Plane",
+      "Part": null,
+      "Pins": null,
+      "Position": {
+        "X": 0.0006,
+        "Y": 0
+      }
+    },
+    {
+      "Number": 2,
+      "Name": "port/2",
+      "Z0Re": 50,
+      "Z0Im": 0,
+      "Kind": "Plane",
+      "Part": null,
+      "Pins": null,
+      "Position": {
+        "X": 0.0018,
+        "Y": 0
+      }
+    }
+  ],
+  "Frequencies": {
+    "SweepHz": [
+      100000000,
+      200000000,
+      300000000,
+      400000000,
+      500000000,
+      600000000,
+      700000000,
+      800000000.0000001,
+      900000000,
+      1000000000,
+      1100000000,
+      1200000000,
+      1300000000,
+      1400000000,
+      1500000000.0000002,
+      1600000000,
+      1700000000,
+      1800000000.0000002,
+      1900000000,
+      2000000000,
+      2100000000,
+      2200000000,
+      2300000000,
+      2400000000,
+      2500000000,
+      2600000000,
+      2700000000,
+      2800000000,
+      2900000000.0000005,
+      3000000000,
+      3100000000,
+      3200000000,
+      3300000000,
+      3400000000,
+      3500000000.0000005,
+      3600000000,
+      3700000000,
+      3800000000,
+      3900000000,
+      4000000000,
+      4100000000,
+      4199999999.9999995,
+      4300000000,
+      4400000000,
+      4500000000,
+      4600000000,
+      4700000000,
+      4800000000,
+      4900000000,
+      5000000000,
+      5100000000,
+      5200000000,
+      5300000000,
+      5400000000,
+      5500000000,
+      5600000000,
+      5700000000.000001,
+      5799999999.999999,
+      5900000000,
+      6000000000,
+      6100000000,
+      6200000000,
+      6300000000,
+      6400000000,
+      6500000000,
+      6600000000,
+      6700000000,
+      6800000000,
+      6900000000.000001,
+      6999999999.999999,
+      7100000000,
+      7200000000,
+      7300000000,
+      7400000000,
+      7500000000,
+      7600000000,
+      7700000000,
+      7800000000,
+      7900000000,
+      8000000000,
+      8100000000,
+      8200000000.000001,
+      8299999999.999999,
+      8400000000,
+      8500000000,
+      8600000000,
+      8700000000,
+      8800000000,
+      8900000000,
+      9000000000,
+      9100000000,
+      9200000000,
+      9300000000,
+      9400000000,
+      9500000000,
+      9600000000,
+      9700000000,
+      9800000000,
+      9900000000,
+      10000000000,
+      10100000000
+    ],
+    "FarFieldHz": [],
+    "FieldSetHz": []
+  },
+  "Setup": {
+    "FormatVersion": 1,
+    "Name": "Output EM",
+    "Frequency": {
+      "StartExpr": "0.1",
+      "StopExpr": "10.1",
+      "StepExpr": "",
+      "NumPoints": 101,
+      "Mode": "PointCount",
+      "Kind": "Linear",
+      "StartUnit": "GHz",
+      "StopUnit": "GHz",
+      "StepUnit": "Hz"
+    },
+    "Port1Z0Real": 50,
+    "Port1Z0Imag": 0,
+    "Port2Z0Real": 50,
+    "Port2Z0Imag": 0,
+    "Mesh": {
+      "MinCellsAcrossWidth": 6,
+      "EdgeCells": 3,
+      "EdgeFractionOfWidth": 0.03,
+      "EdgeGrowthRatio": 1.7,
+      "TruncationHeights": 20,
+      "TruncationTailCells": 12
+    },
+    "DispersionCorrection": false,
+    "Solver3D": "Palace",
+    "AirBox": {
+      "XMin": {
+        "PaddingUm": 0,
+        "Boundary": "Pec"
+      },
+      "XMax": {
+        "PaddingUm": 0,
+        "Boundary": "Pec"
+      },
+      "YMin": {
+        "PaddingUm": 0,
+        "Boundary": "Pec"
+      },
+      "YMax": {
+        "PaddingUm": 0,
+        "Boundary": "Pec"
+      },
+      "ZMin": {
+        "PaddingUm": 0,
+        "Boundary": "Pec"
+      },
+      "ZMax": {
+        "PaddingUm": 0,
+        "Boundary": "Pec"
+      }
+    },
+    "Palace": {
+      "Quality": "Draft",
+      "EdgeRefinement": 1,
+      "ElementOrder": 2,
+      "LinearSolver": "Direct"
+    }
+  },
+  "SetupSource": {
+    "File": "../Output/3d/Output.c3d",
+    "Embedded": "EM"
+  },
+  "ThreeDView": "{\n\t\u0022FormatVersion\u0022: 1,\n\t\u0022DbuPerMicron\u0022: 1000,\n\t\u0022DisplayUnit\u0022: \u0022Um\u0022,\n\t\u0022SnapDbu\u0022: 0,\n\t\u0022Objects\u0022: [\n\t\t{\n\t\t\t\u0022$type\u0022: \u0022Box\u0022,\n\t\t\t\u0022Name\u0022: \u0022mould\u0022,\n\t\t\t\u0022Material\u0022: \u0022Mould compound (generic)\u0022,\n\t\t\t\u0022Role\u0022: \u0022Dielectric\u0022,\n\t\t\t\u0022Min\u0022: [-300000, -650000, 0],\n\t\t\t\u0022Size\u0022: [2200000, 1300000, 600000],\n\t\t\t\u0022Hidden\u0022: true\n\t\t},\n\t\t{\n\t\t\t\u0022$type\u0022: \u0022Box\u0022,\n\t\t\t\u0022Name\u0022: \u0022flange\u0022,\n\t\t\t\u0022Material\u0022: \u0022Copper-molybdenum (70Mo-30Cu)\u0022,\n\t\t\t\u0022Role\u0022: \u0022Conductor\u0022,\n\t\t\t\u0022Min\u0022: [-300000, -650000, -500000],\n\t\t\t\u0022Size\u0022: [2200000, 1300000, 500000]\n\t\t},\n\t\t{\n\t\t\t\u0022$type\u0022: \u0022Box\u0022,\n\t\t\t\u0022Name\u0022: \u0022standoff\u0022,\n\t\t\t\u0022Material\u0022: \u0022Alumina 96%\u0022,\n\t\t\t\u0022Role\u0022: \u0022Dielectric\u0022,\n\t\t\t\u0022Min\u0022: [1050000, -500000, 0],\n\t\t\t\u0022Size\u0022: [750000, 1000000, 65000]\n\t\t},\n\t\t{\n\t\t\t\u0022$type\u0022: \u0022Box\u0022,\n\t\t\t\u0022Name\u0022: \u0022lead\u0022,\n\t\t\t\u0022Material\u0022: \u0022Copper\u0022,\n\t\t\t\u0022Role\u0022: \u0022Conductor\u0022,\n\t\t\t\u0022Min\u0022: [1050000, -500000, 65000],\n\t\t\t\u0022Size\u0022: [750000, 1000000, 60000]\n\t\t}\n\t],\n\t\u0022Instances\u0022: [\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022U1\u0022,\n\t\t\t\u0022CellRef\u0022: \u0022../../Pads\u0022,\n\t\t\t\u0022View\u0022: \u0022Layout\u0022\n\t\t}\n\t],\n\t\u0022Variables\u0022: [\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022Tcase\u0022,\n\t\t\t\u0022Expression\u0022: \u002285\u0022\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022Idc\u0022,\n\t\t\t\u0022Expression\u0022: \u00224\u0022\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022I1\u0022,\n\t\t\t\u0022Expression\u0022: \u00226\u0022\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022I2\u0022,\n\t\t\t\u0022Expression\u0022: \u00221\u0022\n\t\t}\n\t],\n\t\u0022Ports\u0022: [\n\t\t{\n\t\t\t\u0022Number\u0022: 1,\n\t\t\t\u0022Name\u0022: \u0022P1\u0022,\n\t\t\t\u0022Kind\u0022: \u0022Lumped\u0022,\n\t\t\t\u0022Plane\u0022: \u0022YZ\u0022,\n\t\t\t\u0022Offset\u0022: 600000,\n\t\t\t\u0022Rect\u0022: {\n\t\t\t\t\u0022Min\u0022: [-450000, 25000],\n\t\t\t\t\u0022Size\u0022: [900000, 100000]\n\t\t\t},\n\t\t\t\u0022Z0\u0022: \u002250\u0022\n\t\t},\n\t\t{\n\t\t\t\u0022Number\u0022: 2,\n\t\t\t\u0022Name\u0022: \u0022P2\u0022,\n\t\t\t\u0022Kind\u0022: \u0022Lumped\u0022,\n\t\t\t\u0022Plane\u0022: \u0022YZ\u0022,\n\t\t\t\u0022Offset\u0022: 1800000,\n\t\t\t\u0022Rect\u0022: {\n\t\t\t\t\u0022Min\u0022: [-500000, 0],\n\t\t\t\t\u0022Size\u0022: [1000000, 65000]\n\t\t\t},\n\t\t\t\u0022Z0\u0022: \u002250\u0022\n\t\t}\n\t],\n\t\u0022Probes\u0022: [\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022w1\u0022,\n\t\t\t\u0022Wire\u0022: \u0022U1/wire/Out/1\u0022,\n\t\t\t\u0022LimitC\u0022: 150\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022w2\u0022,\n\t\t\t\u0022Wire\u0022: \u0022U1/wire/Out/2\u0022,\n\t\t\t\u0022LimitC\u0022: 150\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022w3\u0022,\n\t\t\t\u0022Wire\u0022: \u0022U1/wire/Out/3\u0022,\n\t\t\t\u0022LimitC\u0022: 150\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022w4\u0022,\n\t\t\t\u0022Wire\u0022: \u0022U1/wire/Out/4\u0022,\n\t\t\t\u0022LimitC\u0022: 150\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022w5\u0022,\n\t\t\t\u0022Wire\u0022: \u0022U1/wire/Out/5\u0022,\n\t\t\t\u0022LimitC\u0022: 150\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022w6\u0022,\n\t\t\t\u0022Wire\u0022: \u0022U1/wire/Out/6\u0022,\n\t\t\t\u0022LimitC\u0022: 150\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022w7\u0022,\n\t\t\t\u0022Wire\u0022: \u0022U1/wire/Out/7\u0022,\n\t\t\t\u0022LimitC\u0022: 150\n\t\t}\n\t],\n\t\u0022FieldPlots\u0022: [\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022DC 14 A \u2014 along wire 4\u0022,\n\t\t\t\u0022Setup\u0022: \u0022DcSweep\u0022,\n\t\t\t\u0022Solution\u0022: {\n\t\t\t\t\u0022Point\u0022: 3\n\t\t\t},\n\t\t\t\u0022Quantity\u0022: \u0022T_C\u0022,\n\t\t\t\u0022On\u0022: \u0022ClipPlane\u0022,\n\t\t\t\u0022Axis\u0022: \u0022Y\u0022,\n\t\t\t\u0022Offset\u0022: 6000\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022DC 14 A \u2014 across the seven wires\u0022,\n\t\t\t\u0022Setup\u0022: \u0022DcSweep\u0022,\n\t\t\t\u0022Solution\u0022: {\n\t\t\t\t\u0022Point\u0022: 3\n\t\t\t},\n\t\t\t\u0022Quantity\u0022: \u0022T_C\u0022,\n\t\t\t\u0022On\u0022: \u0022ClipPlane\u0022,\n\t\t\t\u0022Axis\u0022: \u0022X\u0022,\n\t\t\t\u0022Offset\u0022: 820000,\n\t\t\t\u0022Hidden\u0022: true\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022RF 8 A peak \u2014 across the seven wires\u0022,\n\t\t\t\u0022Setup\u0022: \u0022RfHarmonics\u0022,\n\t\t\t\u0022Solution\u0022: {\n\t\t\t\t\u0022Point\u0022: 3\n\t\t\t},\n\t\t\t\u0022Quantity\u0022: \u0022T_C\u0022,\n\t\t\t\u0022On\u0022: \u0022ClipPlane\u0022,\n\t\t\t\u0022Axis\u0022: \u0022X\u0022,\n\t\t\t\u0022Offset\u0022: 820000,\n\t\t\t\u0022Hidden\u0022: true\n\t\t},\n\t\t{\n\t\t\t\u0022Name\u0022: \u0022RF 8 A peak \u2014 plan through the loops\u0022,\n\t\t\t\u0022Setup\u0022: \u0022RfHarmonics\u0022,\n\t\t\t\u0022Solution\u0022: {\n\t\t\t\t\u0022Point\u0022: 3\n\t\t\t},\n\t\t\t\u0022Quantity\u0022: \u0022T_C\u0022,\n\t\t\t\u0022On\u0022: \u0022ClipPlane\u0022,\n\t\t\t\u0022Axis\u0022: \u0022Z\u0022,\n\t\t\t\u0022Offset\u0022: 330000,\n\t\t\t\u0022Hidden\u0022: true\n\t\t}\n\t],\n\t\u0022Setups\u0022: [\n\t\t{\n\t\t\t\u0022FormatVersion\u0022: 1,\n\t\t\t\u0022Name\u0022: \u0022EM\u0022,\n\t\t\t\u0022Frequency\u0022: {\n\t\t\t\t\u0022StartExpr\u0022: \u00220.1\u0022,\n\t\t\t\t\u0022StopExpr\u0022: \u002210.1\u0022,\n\t\t\t\t\u0022StepExpr\u0022: \u0022\u0022,\n\t\t\t\t\u0022NumPoints\u0022: 101,\n\t\t\t\t\u0022Mode\u0022: \u0022PointCount\u0022,\n\t\t\t\t\u0022Kind\u0022: \u0022Linear\u0022,\n\t\t\t\t\u0022StartUnit\u0022: \u0022GHz\u0022,\n\t\t\t\t\u0022StopUnit\u0022: \u0022GHz\u0022,\n\t\t\t\t\u0022StepUnit\u0022: \u0022Hz\u0022\n\t\t\t},\n\t\t\t\u0022Port1Z0Real\u0022: 50,\n\t\t\t\u0022Port1Z0Imag\u0022: 0,\n\t\t\t\u0022Port2Z0Real\u0022: 50,\n\t\t\t\u0022Port2Z0Imag\u0022: 0,\n\t\t\t\u0022Solver3D\u0022: \u0022Palace\u0022,\n\t\t\t\u0022AirBox\u0022: {\n\t\t\t\t\u0022XMin\u0022: {\n\t\t\t\t\t\u0022PaddingUm\u0022: 0,\n\t\t\t\t\t\u0022Boundary\u0022: \u0022Pec\u0022\n\t\t\t\t},\n\t\t\t\t\u0022XMax\u0022: {\n\t\t\t\t\t\u0022PaddingUm\u0022: 0,\n\t\t\t\t\t\u0022Boundary\u0022: \u0022Pec\u0022\n\t\t\t\t},\n\t\t\t\t\u0022YMin\u0022: {\n\t\t\t\t\t\u0022PaddingUm\u0022: 0,\n\t\t\t\t\t\u0022Boundary\u0022: \u0022Pec\u0022\n\t\t\t\t},\n\t\t\t\t\u0022YMax\u0022: {\n\t\t\t\t\t\u0022PaddingUm\u0022: 0,\n\t\t\t\t\t\u0022Boundary\u0022: \u0022Pec\u0022\n\t\t\t\t},\n\t\t\t\t\u0022ZMin\u0022: {\n\t\t\t\t\t\u0022PaddingUm\u0022: 0,\n\t\t\t\t\t\u0022Boundary\u0022: \u0022Pec\u0022\n\t\t\t\t},\n\t\t\t\t\u0022ZMax\u0022: {\n\t\t\t\t\t\u0022PaddingUm\u0022: 0,\n\t\t\t\t\t\u0022Boundary\u0022: \u0022Pec\u0022\n\t\t\t\t}\n\t\t\t},\n\t\t\t\u0022Palace\u0022: {\n\t\t\t\t\u0022Quality\u0022: \u0022Draft\u0022,\n\t\t\t\t\u0022EdgeRefinement\u0022: 1,\n\t\t\t\t\u0022ElementOrder\u0022: 2,\n\t\t\t\t\u0022LinearSolver\u0022: \u0022Direct\u0022\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\u0022FormatVersion\u0022: 1,\n\t\t\t\u0022Name\u0022: \u0022DcSweep\u0022,\n\t\t\t\u0022Problem3D\u0022: \u0022Thermal\u0022,\n\t\t\t\u0022Thermal\u0022: {\n\t\t\t\t\u0022Boundaries\u0022: [\n\t\t\t\t\t{\n\t\t\t\t\t\t\u0022Face\u0022: \u0022flange/zmin\u0022,\n\t\t\t\t\t\t\u0022Kind\u0022: \u0022FixedT\u0022,\n\t\t\t\t\t\t\u0022TempC\u0022: \u0022Tcase\u0022\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\u0022Currents\u0022: [\n\t\t\t\t\t{\n\t\t\t\t\t\t\u0022Port\u0022: 1,\n\t\t\t\t\t\t\u0022Dc\u0022: \u0022Idc\u0022,\n\t\t\t\t\t\t\u0022EnterFace\u0022: \u0022U1/Pad Metal/2/side1\u0022,\n\t\t\t\t\t\t\u0022LeaveFace\u0022: \u0022U1/Pad Metal/1/side3\u0022\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\u0022Sweep\u0022: [\n\t\t\t\t\t{\n\t\t\t\t\t\t\u0022Var\u0022: \u0022Idc\u0022,\n\t\t\t\t\t\t\u0022Start\u0022: \u00226\u0022,\n\t\t\t\t\t\t\u0022Stop\u0022: \u002218\u0022,\n\t\t\t\t\t\t\u0022Points\u0022: 4\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\u0022Measures\u0022: [\n\t\t\t\t\t\u0022Thot = Tmax(w3)\u0022\n\t\t\t\t],\n\t\t\t\t\u0022Mesh\u0022: {\n\t\t\t\t\t\u0022Order\u0022: 1,\n\t\t\t\t\t\u0022MinThroughThickness\u0022: 1\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\u0022FormatVersion\u0022: 1,\n\t\t\t\u0022Name\u0022: \u0022RfHarmonics\u0022,\n\t\t\t\u0022Problem3D\u0022: \u0022Thermal\u0022,\n\t\t\t\u0022Thermal\u0022: {\n\t\t\t\t\u0022Boundaries\u0022: [\n\t\t\t\t\t{\n\t\t\t\t\t\t\u0022Face\u0022: \u0022flange/zmin\u0022,\n\t\t\t\t\t\t\u0022Kind\u0022: \u0022FixedT\u0022,\n\t\t\t\t\t\t\u0022TempC\u0022: \u0022Tcase\u0022\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\u0022Currents\u0022: [\n\t\t\t\t\t{\n\t\t\t\t\t\t\u0022Port\u0022: 1,\n\t\t\t\t\t\t\u0022Dc\u0022: \u0022Idc\u0022,\n\t\t\t\t\t\t\u0022EnterFace\u0022: \u0022U1/Pad Metal/2/side1\u0022,\n\t\t\t\t\t\t\u0022LeaveFace\u0022: \u0022U1/Pad Metal/1/side3\u0022,\n\t\t\t\t\t\t\u0022F0\u0022: \u00222 GHz\u0022,\n\t\t\t\t\t\t\u0022Harmonics\u0022: [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\u0022N\u0022: 1,\n\t\t\t\t\t\t\t\t\u0022Amp\u0022: \u0022I1\u0022,\n\t\t\t\t\t\t\t\t\u0022As\u0022: \u0022Peak\u0022\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\u0022N\u0022: 2,\n\t\t\t\t\t\t\t\t\u0022Amp\u0022: \u0022I2\u0022,\n\t\t\t\t\t\t\t\t\u0022As\u0022: \u0022Rms\u0022\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\u0022Sweep\u0022: [\n\t\t\t\t\t{\n\t\t\t\t\t\t\u0022Var\u0022: \u0022I1\u0022,\n\t\t\t\t\t\t\u0022Start\u0022: \u00220\u0022,\n\t\t\t\t\t\t\u0022Stop\u0022: \u002212\u0022,\n\t\t\t\t\t\t\u0022Points\u0022: 4\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\u0022Measures\u0022: [\n\t\t\t\t\t\u0022Thot = Tmax(w1)\u0022\n\t\t\t\t],\n\t\t\t\t\u0022Mesh\u0022: {\n\t\t\t\t\t\u0022Order\u0022: 1,\n\t\t\t\t\t\u0022MinThroughThickness\u0022: 1\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\u0022FormatVersion\u0022: 1,\n\t\t\t\u0022Name\u0022: \u0022FromHB\u0022,\n\t\t\t\u0022Problem3D\u0022: \u0022Thermal\u0022,\n\t\t\t\u0022Thermal\u0022: {\n\t\t\t\t\u0022Boundaries\u0022: [\n\t\t\t\t\t{\n\t\t\t\t\t\t\u0022Face\u0022: \u0022flange/zmin\u0022,\n\t\t\t\t\t\t\u0022Kind\u0022: \u0022FixedT\u0022,\n\t\t\t\t\t\t\u0022TempC\u0022: \u0022Tcase\u0022\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\u0022Currents\u0022: [\n\t\t\t\t\t{\n\t\t\t\t\t\t\u0022FromCircuit\u0022: {\n\t\t\t\t\t\t\t\u0022Schematic\u0022: \u0022../../Amplifier/schematic/Amplifier.csch\u0022,\n\t\t\t\t\t\t\t\u0022Analysis\u0022: \u0022SW1\u0022,\n\t\t\t\t\t\t\t\u0022Carry\u0022: [\n\t\t\t\t\t\t\t\t\u0022Pout_dBm\u0022,\n\t\t\t\t\t\t\t\t\u0022Id_A\u0022,\n\t\t\t\t\t\t\t\t\u0022Eff\u0022\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\u0022Measures\u0022: [\n\t\t\t\t\t\u0022Thot = Tmax(w1)\u0022\n\t\t\t\t],\n\t\t\t\t\u0022Mesh\u0022: {\n\t\t\t\t\t\u0022Order\u0022: 1,\n\t\t\t\t\t\u0022MinThroughThickness\u0022: 1\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t]\n}",
+  "Geometry": {
+    "GeometryHash": "3027f61cedc88da8",
+    "MeshHash": "7b51b9526e65a37d",
+    "PortHash": "2f5e379477ac9da7",
+    "ModelRevision": "Palace 0.18.1 (0dc74cd, schema 1-7-0)",
+    "MeshSize": 37611,
+    "MeshUnit": "elements",
+    "Unknowns": 260094
+  }
+}
