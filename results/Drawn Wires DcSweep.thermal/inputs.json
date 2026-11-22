@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "files": [
+    {
+      "path": "Die/layout/Die.clay",
+      "sha256": "0cbaf97bac0122426e07a84c0fc8f474848db8082eb404908ad9e1ac03fd6ef3",
+      "form": "content"
+    },
+    {
+      "path": "Drawn Wires/.ccell",
+      "sha256": "47bf64bafcdba9723b13b939bbba9c3910e51dcd683e6fc9229f4b864e7e34fa",
+      "form": "content"
+    },
+    {
+      "path": "Drawn Wires/3d/Drawn Wires.c3d",
+      "sha256": "8cf948164f6522e9375306de0f98ce414821ad68cdfdb822ee84b239c8b9e0d8",
+      "form": "content"
+    },
+    {
+      "path": "tech/generic-materials.cmat",
+      "sha256": "ee1177e262ccff90ab8b5d206c4e006d58be8769cbf20f89f5198064a0425056",
+      "form": "physics"
+    },
+    {
+      "path": "tech/output-wires.ctech",
+      "sha256": "a9c5701eaafc66f509a6a155d9d5a865d3e69a768940100dedbc611e954123d7",
+      "form": "physics"
+    }
+  ]
+}
